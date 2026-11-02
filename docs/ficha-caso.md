@@ -1,20 +1,20 @@
 # Ficha de caso
 
-> Rellénala con los datos de tu ficha de caso. Todo el proyecto debe usarlos.
-> Todos los datos son **ficticios**: no uses CIF, teléfonos ni correos reales.
+> Caso 08: Las Dunas.
+> Todos los datos de la comunidad son ficticios y se utilizan únicamente para esta práctica.
 
 | Dato | Tu caso |
 | --- | --- |
-| N.º de caso | |
-| Comunidad (razón social) | Comunidad de Propietarios … |
-| CIF ficticio | H-0000000_ |
-| Domicilio | |
-| Correo de contacto | …@….example |
+| N.º de caso | 08 |
+| Comunidad (razón social) | Comunidad de Propietarios Conjunto Residencial Las Dunas |
+| CIF ficticio | H-00000008 |
+| Domicilio | Avenida de Las Dunas, 36 · 00000 Localidad Ficticia |
+| Correo de contacto | administracion@lasdunas.example |
 | Teléfono Bizum de la comunidad | 600 000 000 |
-| N.º de pistas y nombres | |
-| Duración del turno | |
-| Horario de apertura | |
-| Tarifa por invitado no residente | |
-| Máximo de invitados por reserva | |
-| Tono base del color de acento | |
-| Vivienda del usuario de ejemplo | |
+| N.º de pistas y nombres | 1 pista: Central |
+| Duración del turno | 60 minutos |
+| Horario de apertura | 08:00–22:00 |
+| Tarifa por invitado no residente | 2,00 € |
+| Máximo de invitados por reserva | 3 |
+| Tono base del color de acento | 322° en OKLCH |
+| Vivienda del usuario de ejemplo | 6.º A |
