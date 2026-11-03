@@ -1,0 +1,14 @@
+@layer components {
+  .aviso {
+    padding: var(--espacio-s);
+    border: 2px solid var(--color-acento);
+    border-radius: var(--radio-tarjeta);
+    background-color: var(--color-acento-tenue);
+    color: var(--color-acento);
+  }
+
+  .aviso__concepto {
+    font-family: var(--fuente-mono);
+    overflow-wrap: anywhere;
+  }
+}

@@ -1,0 +1,34 @@
+@use "../abstracts" as *;
+
+@layer components {
+  .invitados__opciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacio-2xs);
+  }
+
+  .invitados__opcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--espacio-2xs);
+    min-block-size: rem(44);
+    min-inline-size: rem(44);
+    margin: 0;
+    padding: var(--espacio-2xs);
+    border: 2px solid var(--color-borde-control);
+    border-radius: var(--radio-control);
+    background-color: var(--color-superficie);
+    color: var(--color-texto);
+    cursor: pointer;
+
+    &:has(:checked) {
+      border-color: var(--color-acento);
+      background-color: var(--color-acento-tenue);
+    }
+
+    &:has(:focus-visible) {
+      @include foco-visible;
+    }
+  }
+}
