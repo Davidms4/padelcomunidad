@@ -107,23 +107,27 @@
       </div>
       <button class="boton boton--bloque" type="button">Ancho completo (móvil)</button>
 
-      <h3>Tarjeta de turno</h3>
-      <!-- TODO Fase 1: completa scss/components/_turno.scss hasta que los 3 estados se distingan sin depender del color -->
+            <h3>Tarjeta de turno</h3>
+      <p>Elige un turno. Los turnos ocupados no se pueden seleccionar.</p>
+
       <fieldset class="guia__fila">
-        <legend>Turnos del jueves 29 de octubre</legend>
+        <legend>Turnos de ejemplo · Pista Central</legend>
+
         <label class="turno">
           <input class="turno__control" type="radio" name="turno" value="0900">
-          <span class="turno__hora">09:00 – 10:30</span>
+          <span class="turno__hora">09:00 – 10:00</span>
           <span class="turno__estado">Disponible · Pista Central</span>
         </label>
+
         <label class="turno">
-          <input class="turno__control" type="radio" name="turno" value="1030" disabled>
-          <span class="turno__hora">10:30 – 12:00</span>
-          <span class="turno__estado">Ocupado</span>
+          <input class="turno__control" type="radio" name="turno" value="1000" disabled>
+          <span class="turno__hora">10:00 – 11:00</span>
+          <span class="turno__estado">Ocupado · Pista Central</span>
         </label>
+
         <label class="turno">
           <input class="turno__control" type="radio" name="turno" value="1800" checked>
-          <span class="turno__hora">18:00 – 19:30</span>
+          <span class="turno__hora">18:00 – 19:00</span>
           <span class="turno__estado">Disponible · Pista Central</span>
         </label>
       </fieldset>
