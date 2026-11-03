@@ -44,30 +44,102 @@
               <th scope="col">Muestra</th>
               <th scope="col">Token</th>
               <th scope="col">Uso</th>
-              <th scope="col">Contraste claro</th>
-              <th scope="col">Contraste oscuro</th>
+              <th scope="col" data-tipo="numero">Contraste claro</th>
+              <th scope="col" data-tipo="numero">Contraste oscuro</th>
             </tr>
           </thead>
-          <tbody>
+                    <tbody>
             <tr>
-              <td>
-                <span class="muestra" style="--muestra: var(--color-texto)"></span>
-              </td>
+              <td><span class="muestra" style="--muestra: var(--color-fondo)"></span></td>
+              <td><code>--color-fondo</code></td>
+              <td>Fondo general</td>
+              <td data-tipo="numero">17,06:1 con texto</td>
+              <td data-tipo="numero">17,06:1 con texto</td>
+            </tr>
+            <tr>
+              <td><span class="muestra" style="--muestra: var(--color-superficie)"></span></td>
+              <td><code>--color-superficie</code></td>
+              <td>Fondo de tarjetas y campos</td>
+              <td data-tipo="numero">17,85:1 con texto</td>
+              <td data-tipo="numero">13,98:1 con texto</td>
+            </tr>
+            <tr>
+              <td><span class="muestra" style="--muestra: var(--color-texto)"></span></td>
               <td><code>--color-texto</code></td>
               <td>Texto principal</td>
-              <td>17,1:1 sobre fondo</td>
-              <td>17,1:1 sobre fondo</td>
+              <td data-tipo="numero">17,06:1 sobre fondo</td>
+              <td data-tipo="numero">17,06:1 sobre fondo</td>
             </tr>
             <tr>
-              <td>
-                <span class="muestra" style="--muestra: var(--color-acento)"></span>
-              </td>
-              <td><code>--color-acento</code></td>
-              <td>Botón principal, enlaces, selección</td>
-              <td>7,24:1 sobre superficie</td>
-              <td>6,71:1 sobre superficie</td>
+              <td><span class="muestra" style="--muestra: var(--color-texto-suave)"></span></td>
+              <td><code>--color-texto-suave</code></td>
+              <td>Texto secundario</td>
+              <td data-tipo="numero">4,76:1 sobre superficie</td>
+              <td data-tipo="numero">5,71:1 sobre superficie</td>
             </tr>
-            <!-- Pendiente: completar el resto de tokens de color. -->
+            <tr>
+              <td><span class="muestra" style="--muestra: var(--color-borde)"></span></td>
+              <td><code>--color-borde</code></td>
+              <td>Separadores y bordes decorativos</td>
+              <td data-tipo="numero">1,23:1 sobre superficie</td>
+              <td data-tipo="numero">3,07:1 sobre superficie</td>
+            </tr>
+            <tr>
+              <td><span class="muestra" style="--muestra: var(--color-borde-control)"></span></td>
+              <td><code>--color-borde-control</code></td>
+              <td>Bordes de controles</td>
+              <td data-tipo="numero">4,76:1 sobre superficie</td>
+              <td data-tipo="numero">5,71:1 sobre superficie</td>
+            </tr>
+            <tr>
+              <td><span class="muestra" style="--muestra: var(--color-acento)"></span></td>
+              <td><code>--color-acento</code></td>
+              <td>Botón principal, enlaces y selección</td>
+              <td data-tipo="numero">7,24:1 sobre superficie</td>
+              <td data-tipo="numero">6,71:1 sobre superficie</td>
+            </tr>
+            <tr>
+              <td><span class="muestra" style="--muestra: var(--color-acento-hover)"></span></td>
+              <td><code>--color-acento-hover</code></td>
+              <td>Fondo del botón al pasar el ratón</td>
+              <td data-tipo="numero">10,22:1 con sobre-acento</td>
+              <td data-tipo="numero">10,73:1 con sobre-acento</td>
+            </tr>
+            <tr>
+              <td><span class="muestra" style="--muestra: var(--color-sobre-acento)"></span></td>
+              <td><code>--color-sobre-acento</code></td>
+              <td>Texto sobre el botón principal</td>
+              <td data-tipo="numero">7,24:1 sobre acento</td>
+              <td data-tipo="numero">8,18:1 sobre acento</td>
+            </tr>
+            <tr>
+              <td><span class="muestra" style="--muestra: var(--color-acento-tenue)"></span></td>
+              <td><code>--color-acento-tenue</code></td>
+              <td>Fondo de selección y aviso de pago</td>
+              <td data-tipo="numero">5,99:1 con acento</td>
+              <td data-tipo="numero">8,40:1 con acento</td>
+            </tr>
+            <tr>
+              <td><span class="muestra" style="--muestra: var(--color-exito)"></span></td>
+              <td><code>--color-exito</code></td>
+              <td>Texto de confirmación o éxito</td>
+              <td data-tipo="numero">5,21:1 sobre exito-tenue</td>
+              <td data-tipo="numero">9,94:1 sobre exito-tenue</td>
+            </tr>
+            <tr>
+              <td><span class="muestra" style="--muestra: var(--color-exito-tenue)"></span></td>
+              <td><code>--color-exito-tenue</code></td>
+              <td>Fondo de mensajes de éxito</td>
+              <td data-tipo="numero">5,21:1 con exito</td>
+              <td data-tipo="numero">9,94:1 con exito</td>
+            </tr>
+            <tr>
+              <td><span class="muestra" style="--muestra: var(--color-foco)"></span></td>
+              <td><code>--color-foco</code></td>
+              <td>Anillo de foco del teclado</td>
+              <td data-tipo="numero">6,92:1 sobre fondo</td>
+              <td data-tipo="numero">8,18:1 sobre fondo</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -90,11 +162,19 @@
     <!-- ESPACIADO -->
     <section class="guia__seccion" aria-labelledby="espaciado">
       <h2 id="espaciado">Espaciado</h2>
-      <p>Múltiplos de 4 px. Ningún margen, relleno ni hueco usa un valor fuera de esta escala.</p>
+      <p>Escala basada en múltiplos de 4 px para mantener separaciones consistentes.</p>
 
+      <div class="guia__fila">
+        <span class="barra" style="--ancho: var(--espacio-3xs)"></span>
+        <code>--espacio-3xs</code> 4 px
+      </div>
       <div class="guia__fila">
         <span class="barra" style="--ancho: var(--espacio-2xs)"></span>
         <code>--espacio-2xs</code> 8 px
+      </div>
+      <div class="guia__fila">
+        <span class="barra" style="--ancho: var(--espacio-xs)"></span>
+        <code>--espacio-xs</code> 12 px
       </div>
       <div class="guia__fila">
         <span class="barra" style="--ancho: var(--espacio-s)"></span>
@@ -104,8 +184,18 @@
         <span class="barra" style="--ancho: var(--espacio-m)"></span>
         <code>--espacio-m</code> 24 px
       </div>
-
-      <!-- Pendiente: completar la escala de espaciado. -->
+      <div class="guia__fila">
+        <span class="barra" style="--ancho: var(--espacio-l)"></span>
+        <code>--espacio-l</code> 32 px
+      </div>
+      <div class="guia__fila">
+        <span class="barra" style="--ancho: var(--espacio-xl)"></span>
+        <code>--espacio-xl</code> 48 px
+      </div>
+      <div class="guia__fila">
+        <span class="barra" style="--ancho: var(--espacio-2xl)"></span>
+        <code>--espacio-2xl</code> 64 px
+      </div>
     </section>
 
     <!-- COMPONENTES -->
