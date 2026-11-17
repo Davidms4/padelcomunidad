@@ -6,7 +6,7 @@
 ## Ruta de trabajo
 
 - [ ] Ruta A · Figma
-- [x] Ruta B · VS Code
+- [X] Ruta B · VS Code
 
 He elegido trabajar en VS Code porque puedo cambiar los estilos y ver
 el resultado directamente en el navegador. Así no tengo que actualizar
