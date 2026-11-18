@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Turnos · Pádel Las Dunas</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__interior contenedor">
+      <a class="cabecera__marca" href="index.html">Pádel Las Dunas</a>
+
+      <nav class="menu" aria-label="Principal">
+        <ul class="menu__lista">
+          <li>
+            <a class="menu__enlace" href="index.html" aria-current="page">Turnos</a>
+          </li>
+          <li>
+            <a class="menu__enlace" href="mis-turnos.html">Mis turnos</a>
+          </li>
+          <li>
+            <a class="menu__enlace" href="normas.html">Normas</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <main id="contenido" class="contenedor">
+    <h1>Turnos</h1>
+    <p>Elige la fecha y un turno disponible. La pista abre de 08:00 a 22:00 y cada turno dura 60 minutos.</p>
+
+    <form action="reserva.html" method="get">
+      <p>
+        <label for="fecha">Fecha de la reserva</label>
+        <input id="fecha" name="fecha" type="date" required>
+      </p>
+
+      <fieldset>
+        <legend>Pista</legend>
+        <label>
+          <input type="radio" name="pista" value="central" checked>
+          Central
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Turnos disponibles</legend>
+
+        <label class="turno">
+          <input class="turno__control" type="radio"
+                 name="turno" value="0900" required>
+          <span class="turno__hora">09:00 – 10:00</span>
+          <span class="turno__estado">Disponible · Pista Central</span>
+        </label>
+
+        <label class="turno">
+          <input class="turno__control" type="radio"
+                 name="turno" value="1000" disabled>
+          <span class="turno__hora">10:00 – 11:00</span>
+          <span class="turno__estado">Ocupado · Pista Central</span>
+        </label>
+
+        <label class="turno">
+          <input class="turno__control" type="radio"
+                 name="turno" value="1800">
+          <span class="turno__hora">18:00 – 19:00</span>
+          <span class="turno__estado">Disponible · Pista Central</span>
+        </label>
+      </fieldset>
+
+      <button class="boton" type="submit">Continuar</button>
+    </form>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__interior contenedor">
+      <address class="pie__datos">
+        Comunidad de Propietarios Conjunto Residencial Las Dunas · CIF H-00000008<br>
+        Avenida de Las Dunas, 36 · 00000 Localidad Ficticia<br>
+        <a href="mailto:administracion@lasdunas.example">
+          administracion@lasdunas.example
+        </a>
+      </address>
+
+      <nav aria-label="Legal">
+        <ul class="pie__enlaces">
+          <li><a href="aviso-legal.html">Aviso legal</a></li>
+          <li><a href="privacidad.html">Privacidad</a></li>
+          <li><a href="normas.html">Normas de uso</a></li>
+        </ul>
+      </nav>
+
+      <p class="pie__nota">
+        <small>Proyecto académico ficticio · DIW 0615 · 2.º DAW</small>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
