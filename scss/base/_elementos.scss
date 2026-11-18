@@ -6,6 +6,10 @@
 @use "../abstracts" as *;
 
 @layer base {
+  main {
+    padding-block: var(--espacio-m);
+  }
+
   p {
     max-inline-size: 65ch;
     margin-block-end: var(--espacio-s);
